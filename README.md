@@ -1,5 +1,22 @@
 ![AnnotAISE logo](frontend/public/Full_Logo_DarkMode.svg)
 
+# ANNOTAISE
+
+The **AnnotAISE** platform enables the creation of research labeling forms based on **CSV files**, allowing users to map columns into *contexts*, define *questions* (various types), and generate **N** forms for **N** rows of data.
+
+**Repository:** [https://github.com/aisepucrio/annotaise](https://github.com/aisepucrio/annotaise)
+
+---
+
+## Table of Contents
+
+- [Project Description](#project-description)
+- [Target Users](#target-users)
+- [Project Dependencies](#project-dependencies)
+- [Installation](#installation)
+- [Run AnnotAISE](#run-annotaise)
+
+---
 ## Project Description
 
 **AnnotAISE** is a CSV-driven labeling platform with two user profiles:
@@ -7,7 +24,7 @@
 - **Researcher:** creates **labeling models** from a CSV file. Each **column** becomes a **context**; in the **builder**, the user adds **sections** and **questions** (e.g., text, number, range, multiple choice, boolean) and can mark them as **required**. Once finished, the system generates **N forms** for **N rows** of the CSV file.
 - **Regular user (annotator):** accesses the assigned labelings, **answers the forms**, and **submits** the responses.
 
-## Who this project is for
+## Target Users
 
 This project is intended for:
 
@@ -25,6 +42,7 @@ Before using **AnnotAISE**, ensure you have the following prerequisites installe
 - **Git** — to clone and manage the project repository.
 
 ---
+## Installation
 
 ### 1. Docker Desktop
 - **Windows**:
