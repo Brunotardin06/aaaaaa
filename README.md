@@ -61,11 +61,6 @@ Before using **AnnotAISE**, ensure you have the following prerequisites installe
   sudo chmod +x /usr/local/bin/docker-compose
   docker-compose --version
   ```
-
-docker compose version
-
-### Verificar Git
-git --version
 ### 3. Git
 - **Windows**:
   1. Download [Git for Windows](https://git-scm.com/download/win)
