@@ -85,3 +85,64 @@ git --version
   sudo apt install git
   git --version
   ```
+## Instructions for using AnnotAISE
+
+Get started with **AnnotAISE** by following the steps below.
+
+---
+
+### Install AnnotAISE
+
+- **Step 1 — Clone the repository**
+```bash
+git clone https://github.com/aisepucrio/annotaise.git
+cd annotaise
+```
+- **Step 2 - Create the .env file**
+  Create a file named .env in the project root with:
+```bash
+POSTGRES_DB=annotaise
+POSTGRES_USER=annotaise
+POSTGRES_PASSWORD=annotaise
+POSTGRES_PORT=5432
+
+DJANGO_SECRET_KEY=change-me
+DJANGO_DEBUG=1
+DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1
+CORS_ALLOWED_ORIGINS=http://localhost:3000
+
+DJANGO_SUPERUSER_USERNAME=admin
+DJANGO_SUPERUSER_EMAIL=admin@example.com
+DJANGO_SUPERUSER_PASSWORD=admin
+
+```
+- **Step 3 - Start containers(recomended)**
+```bash
+docker compose up --build
+```
+- **Step 4 - Apply migrations and create a superuser**
+```bash
+docker compose exec api python manage.py migrate
+docker compose exec api python manage.py createsuperuser
+```
+### Run AnnotAISE
+- **With Docker**
+```bash
+docker compose up --build
+```
+- **Manual**
+  - Backend
+  ```bash
+  cd backend
+  python -m venv .venv && source .venv/bin/activate
+  pip install -r requirements.txt
+  python manage.py migrate
+  python manage.py runserver 0.0.0.0:8000
+  ```
+  - Frontend
+  ```bash
+  cd ../frontend
+  npm install
+  npm run dev
+
+  ```
