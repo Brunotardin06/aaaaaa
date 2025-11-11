@@ -1,11 +1,11 @@
 ![AnnotAISE logo](frontend/public/Full_Logo_DarkMode.svg)
 
-## Descrição do Projeto
+## Project Description
 
-O **AnnotAISE** é uma plataforma de rotulação orientada por **CSV** com dois perfis:
+**AnnotAISE** is a CSV-driven labeling platform with two user profiles:
 
-- **Pesquisador(a):** cria **modelos de rotulação** a partir de um CSV. Cada **coluna** vira um **contexto**; no **construtor** adiciona **seções** e **perguntas** (ex.: texto, número, faixa, múltipla escolha, booleano), podendo marcar como **obrigatórias**. Ao finalizar, o sistema gera **N formulários** para **N linhas** do CSV.
-- **Usuário comum (anotador):** acessa as rotulações atribuídas, **responde os formulários** e **submete** as respostas.
+- **Researcher:** creates **labeling models** from a CSV file. Each **column** becomes a **context**; in the **builder**, the user adds **sections** and **questions** (e.g., text, number, range, multiple choice, boolean) and can mark them as **required**. Once finished, the system generates **N forms** for **N rows** of the CSV file.
+- **Regular user (annotator):** accesses the assigned labelings, **answers the forms**, and **submits** the responses.
 
 ## Who this project is for
 
